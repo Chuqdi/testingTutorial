@@ -22,4 +22,5 @@ class ListBooks(ListView):
 
 class DeleteBook(DeleteView):
     template_name ="delete.html"
-    success_url = "/list_book"
+    queryset = Book.objects.all()
+    success_url = "/create_book"
