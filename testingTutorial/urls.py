@@ -9,5 +9,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("create_book", CreateBook.as_view(), name="create_book"),
     path("list_book", ListBooks.as_view(), name="list_book"),
-    path("delete_book", DeleteBook.as_view(), name="delete_book"),
+    path("delete_book/<int:pk>/", DeleteBook.as_view(), name="delete_book"),
 ]
