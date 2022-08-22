@@ -1,0 +1,17 @@
+
+
+
+{%extends 'base.html' %}
+{%block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 card">
+            {% for book in books %}
+                {{ book.name }}
+            {%endfor%}
+        </div>
+    </div>
+</div>
+
+{%endblock%}
